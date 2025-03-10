@@ -18,9 +18,9 @@ public class FlutterMicrosoftClarityPlugin: NSObject, FlutterPlugin {
                 // Inicialize o Microsoft Clarity aqui
                  let clarityConfig: ClarityConfig
             if let userId = userId {
-                clarityConfig = ClarityConfig(projectId: projectId, userId: userId, enableSwiftUI_Experimental: true)
+                clarityConfig = ClarityConfig(projectId: projectId, userId: userId)
             } else {
-                clarityConfig = ClarityConfig(projectId: projectId, enableSwiftUI_Experimental: true)
+                clarityConfig = ClarityConfig(projectId: projectId)
             }
             ClaritySDK.initialize(config: clarityConfig)
                 ClaritySDK.initialize(config: clarityConfig)
